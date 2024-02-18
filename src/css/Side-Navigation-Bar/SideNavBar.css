@@ -1,0 +1,56 @@
+.Side-Navigation-Bar{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    margin-bottom: 24px;
+    gap:24px;
+    position: fixed;
+    /* max-width: 20%; */
+    left: 0px;
+    top: 0px;
+    /* width: 7%; */
+    width: 80px;
+    border: 0px 1px 0px 0px;
+    /* right: 90%; */
+    background-color: white;
+    height: 100%;
+    /* padding: 20px 24px; */
+    padding: 32px 0px 0px 0px;
+    text-align: center;
+    border-right: 1px solid #EAECF0;
+
+    
+  }
+
+
+  .Side-Navigation-Header-Element{
+    background-color:black;
+    width: 32px;
+    height: 32px;
+    /* margin: 0px auto auto; */
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    left: 24px;
+    border-radius: 9.6px;
+    position: relative;
+  
+    /* width: 32px
+  height: 32px
+  left: 24px
+  border-radius: 9.6px */
+  
+  
+    background: linear-gradient(213.41deg, #5E5ADB 14.33%, rgba(97, 90, 219, 0.72) 105.93%);
+  
+  }
+
+
+
+  .Side-Navigation-Header-Element-Image{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 20.39px;
+    width: 19.2px;
+  }

@@ -1,0 +1,56 @@
+.Top-Navigation-Bar-Left{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* width: 327px; */
+    /* height: 20px; */
+    /* top: 22px; */
+    /* left: 16px; */
+    /* padding: 0px, 15px, 0px, 0px; */
+    /* gap: 47px; */
+    gap: 20px;
+    left: 21.6px;
+
+
+
+
+    /* width: 327px; */
+height: 20px;
+top: 22px;
+/* left: 16px; */
+/* padding: 0px, 15px, 0px, 0px; */
+/* gap: 47px */
+
+}
+
+
+.Top-Navigation-Home-Element{
+    position: relative;
+    width: 20.8px;
+    height: 20.8px;
+    /* top: 21.6px; */
+    padding: 1.73px 2.6px 1.73px 2.6px;
+    border-radius: 5px;
+
+}
+
+.Top-Navigation-Home-Element:hover{
+    position: relative;
+    width: 20.8px;
+    height: 20.8px;
+    /* top: 21.6px; */
+    /* left: 21.6px; */
+    padding: 1.73px 2.6px 1.73px 2.6px;
+    background-color: #E9EDF5;
+}
+
+.Top-Navigation-Home-Element-Image{
+    position: relative;
+    width: 15.6px;
+    height: 17.33px; 
+    top: 1.73px;
+    left: 2.6px;
+    border: 1.6px;
+    color: #99999B;
+}

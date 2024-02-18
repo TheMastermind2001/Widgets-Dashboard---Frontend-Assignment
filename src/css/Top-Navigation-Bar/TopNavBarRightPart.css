@@ -1,0 +1,76 @@
+.Top-Navigation-Bar-Right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    gap: 24px;
+    right: 129px;
+}
+
+.Top-Navigation-Add-Widget-Element{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    width: 140px;
+    height: 40px;
+    top:auto;
+    bottom: auto;
+    border-radius: 10px;
+    border: 1px solid #e1e1e9;
+    cursor: pointer;
+    background-color:#F4F4FF ;
+}
+
+
+.Top-Navigation-Add-Widget-Element:hover{
+    position: relative;
+    width: 140px;
+    height: 40px;
+    top:auto;
+    bottom: auto;
+    border-radius: 10px;
+    border-width: 1.4px;
+    background-color:#F3F2FC;
+    color: #5E5ADB;
+}
+
+
+.Top-Navigation-Bar-Add-Widget-Element-Div{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+}   
+
+.Top-Navigation-Bar-Add-Widget-Element-Text{
+    
+    font-family:'Inter';
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #5E5ADB;
+    ;
+
+}
+
+
+.Plus-Button-Div-Add-Widget{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+   /* position: relative;
+    height: 20px;
+    width: 20px; */
+    
+}
+
+.Plus-Button-Add-Widget{
+    /* position: absolute; */
+    /* bottom: auto; */
+    /* right: auto; */
+    /* height: 14px; */
+    /* width: 14px; */
+}
