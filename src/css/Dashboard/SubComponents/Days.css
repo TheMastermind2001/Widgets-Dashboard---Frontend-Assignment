@@ -1,0 +1,84 @@
+.Days-Div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* gap: 85%; */
+}
+
+.Days{
+    position: relative;
+    display: flex;
+top: 12px;
+left: 25px;
+height: 31px;
+}
+
+.Days>h1{
+    font-family:'Inter';
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #BBBBBB;
+    width: 37px;
+    margin: 0;
+    height: 19px;
+    cursor: pointer;
+/* height: 19px; */
+
+}
+
+.Days>h1:hover{
+    color: #8d8d8d;
+    
+/* height: 19px; */
+
+}
+
+.Table-Three-Dots-Div{
+    padding-top: 5px;
+    padding-right: 15px;
+}
+
+.Table-Three-Dots{
+    position: relative;
+    height: 5px;
+    width: 18px;
+    cursor: pointer;
+    transition: filter 0.5s ease;
+    /* left: 18px; */
+}
+
+.Table-Three-Dots-Div:hover{
+    /* left: 18px; */
+}
+
+.Horizontal-Line{
+    border: none; /* Remove the default border */
+  /* height: 1px; Set the height of the line */
+  background-color: #E1E1E1; /* Set the line color */
+  margin: 0;
+  border: 1px solid #E1E1E1;
+
+}
+
+/* .Is-Selected{
+    color: ;
+} */
+
+.Color-Is-White{
+    color: white;
+}
+
+.Days > h1.Color-Is-Blue {
+    color: #5E5ADB;
+}
+
+.Bold-Line{
+    margin: 0;
+    margin-top: -1px;
+    width: 50px;
+    border: 2px solid #5E5ADB
+    /* margin-top: -1px; */
+}

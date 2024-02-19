@@ -1,0 +1,31 @@
+/* .Dashboard{ */
+    /* position: relative;
+    left: 80px;
+    height: 100%;
+    width: 100%;
+} */
+
+.Dashboard {
+
+    position: relative;
+    left: 80px; /* Assuming this is the width of your side nav */
+    top: 60px; /* Adjust this value based on the height of your top nav */
+    /* height: calc(100% - 60px);  */
+    /* Subtract top nav height */
+    /* width: calc(100% - 80px);  */
+    /* Subtract side nav width */
+    /* overflow: auto;  */
+    /* width: calc(100% - 80px); Subtract the sidebar width */
+  /* overflow-x: hidden; */
+    /*Add scroll if content exceeds the viewport */
+}
+
+.Dashboard-Elements{
+    /* position: relative; */
+    /* height: calc(100% - 29px); */
+    /* width: calc(100% - 37px); */
+    /* max-width: 100%; */
+    /* left: 37px; */
+    /* top: 29px; */
+    /* padding-left: 37px; */
+}

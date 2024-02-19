@@ -1,0 +1,13 @@
+
+          <h1 style={{color:selectedIdx == 2?color != "white"? "#5E5ADB": "white": "#BBBBBB"}}
+            className={
+              (selectedIdx == 2 ? "Is-Selected " : "") +
+              (selectedIdx == 2
+                ? color == "white"
+                  ? "Color-Is-White"
+                  : "Color-Is-Blue"
+                : "")
+            }
+            onClick={() => {
+              setSelectedIdx(2);
+            }}
