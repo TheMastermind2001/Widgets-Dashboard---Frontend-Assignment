@@ -8,14 +8,14 @@ const dashboardDataDefault = {
           timeFrames: ["7d", "14d", "30d"],
           scores: [
             {
-              period: "01-23",
+              period: "Q1-23",
               reusable: "10%",
               natural: "2%",
               compost: "7%",
               reusableMaterial: "3%",
             },
             {
-              period: "02-23",
+              period: "Q2-23",
               reusable: "4%",
               natural: "11%",
               compost: "5%",

@@ -8,9 +8,9 @@
 .Days{
     position: relative;
     display: flex;
-top: 12px;
-left: 25px;
-height: 31px;
+    top: 12px;
+    left: 25px;
+    height: 31px;
 }
 
 .Days>h1{
@@ -30,10 +30,8 @@ height: 31px;
 }
 
 .Days>h1:hover{
-    color: #8d8d8d;
-    
+    color: #8c8585;
 /* height: 19px; */
-
 }
 
 .Table-Three-Dots-Div{

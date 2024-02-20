@@ -12,7 +12,6 @@ function Days({ color }: Props) {
     <div className="Days-Div-Main">
       <div className="Days-Div">
         <div className="Days">
-          <div></div>
           <h1
             style={{
               color:
@@ -69,7 +68,11 @@ function Days({ color }: Props) {
         <hr className="Horizontal-Line"></hr>
         <hr
           className="Bold-Line"
-          style={{ position: "relative", left: (selectedIdx - 1) * 45 }}
+          style={{
+            position: "relative",
+            top: "-1px",
+            left: (selectedIdx - 1) * 45,
+          }}
         ></hr>
       </div>
     </div>
