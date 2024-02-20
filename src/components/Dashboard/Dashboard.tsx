@@ -25,6 +25,18 @@ const Dashboard: React.FC = () => {
           today={true}
           bgcolor="white"
         ></Table1>
+
+        <Table1
+          data={dashboardData?.widgets[0]}
+          today={true}
+          bgcolor="#5E5ADB"
+        ></Table1>
+
+        <Table1
+          data={dashboardData?.widgets[0]}
+          today={true}
+          bgcolor="#282828"
+        ></Table1>
       </div>
     </div>
   );

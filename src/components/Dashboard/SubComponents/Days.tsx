@@ -7,6 +7,16 @@ type Props = {
 };
 
 function Days({ color }: Props) {
+  const idxMapBoldLine: any = {
+    white: "#5E5ADB",
+    "#5E5ADB": "#F1F1F2",
+    "#282828": "#F1F1F2",
+  };
+  const idxMapTextHead: any = {
+    white: "#BBBBBB",
+    "#5E5ADB": "#FFFFFF",
+    "#282828": "#A0A0A0",
+  };
   const [selectedIdx, setSelectedIdx] = useState(1);
   return (
     <div className="Days-Div-Main">
@@ -16,10 +26,8 @@ function Days({ color }: Props) {
             style={{
               color:
                 selectedIdx == 1
-                  ? color != "white"
-                    ? "#5E5ADB"
-                    : "white"
-                  : "#BBBBBB",
+                  ? idxMapBoldLine[color]
+                  : idxMapTextHead[color],
             }}
             onClick={() => {
               setSelectedIdx(1);
@@ -32,10 +40,8 @@ function Days({ color }: Props) {
             style={{
               color:
                 selectedIdx == 2
-                  ? color != "white"
-                    ? "#5E5ADB"
-                    : "white"
-                  : "#BBBBBB",
+                  ? idxMapBoldLine[color]
+                  : idxMapTextHead[color],
             }}
             onClick={() => {
               setSelectedIdx(2);
@@ -48,10 +54,8 @@ function Days({ color }: Props) {
             style={{
               color:
                 selectedIdx == 3
-                  ? color != "white"
-                    ? "#5E5ADB"
-                    : "white"
-                  : "#BBBBBB",
+                  ? idxMapBoldLine[color]
+                  : idxMapTextHead[color],
             }}
             onClick={() => {
               setSelectedIdx(3);
@@ -69,6 +73,7 @@ function Days({ color }: Props) {
         <hr
           className="Bold-Line"
           style={{
+            color: idxMapBoldLine[color],
             position: "relative",
             top: "-1px",
             left: (selectedIdx - 1) * 45,
