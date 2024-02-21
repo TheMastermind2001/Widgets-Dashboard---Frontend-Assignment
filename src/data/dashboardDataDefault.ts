@@ -33,11 +33,11 @@ const dashboardDataDefault = {
         description:
           "Analysis of email campaign performance, highlighting optimal send times.",
         data: {
-          bestTimeToSend: "15:03 PM",
+          bestTimeToSend: "15:00",
           openRates: [
-            { time: "15:03 PM", opened: 5041 },
-            { time: "16:00 PM", opened: 5007 },
-            { time: "17:00 PM", opened: 4785 },
+            { time: "15:00", opened: 5041 },
+            { time: "16:00", opened: 5007 },
+            { time: "17:00", opened: 4785 },
             // Add more time slots as needed
           ],
         },

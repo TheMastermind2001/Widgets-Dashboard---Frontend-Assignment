@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "../../css/Dashboard/Dashboard.css";
 import Table1 from "./Widgets/Table1";
 import { DashboardData } from "../../types";
+import Summary from "./Widgets/Summary";
 
 const Dashboard: React.FC = () => {
   const [dashboardData, setDashboardData] = useState<DashboardData | null>(
@@ -37,6 +38,12 @@ const Dashboard: React.FC = () => {
           today={true}
           bgcolor="#282828"
         ></Table1>
+
+        <Summary
+          data={dashboardData?.widgets[1]}
+          bgcolor={"white"}
+          txtcolor="rgba(0,0,0,0.8)"
+        ></Summary>
       </div>
     </div>
   );
