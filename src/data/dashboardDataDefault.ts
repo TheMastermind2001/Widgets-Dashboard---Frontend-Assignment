@@ -42,19 +42,49 @@ const dashboardDataDefault = {
           ],
         },
       },
+
       {
-        id: "widget3",
-        type: "salesData",
-        title: "Sales Data",
-        data: {
-          salesFigures: [
-            { product: "Christmas25", sales: 5700 },
-            { product: "BirthdaySpecial25", sales: 27000 },
-            // Add more products as needed
-          ],
-          totalSales: 89000,
-        },
+        "timeframe": "7d",
+        "data": [
+          {
+            "name": "Christmas25",
+            "color": "#FF8E8E",
+            "value": 5700,
+            "platforms": {
+              "Initial":15,
+              "Google": 11,
+              "Instagram": 5,
+              "Facebook": 9,
+              "TikTok": 7
+            }
+          },
+          {
+            "name": "BirthdaySpecial25",
+            "color": "#5E5ADB",
+            "value": 27000,
+            "platforms": {
+              "Initial":6,
+              "Google": 21,
+              "Instagram": 27,
+              "Facebook": 3,
+              "TikTok": 1
+            }
+          },
+          {
+            "name": "Newuser30",
+            "color": "#5FDC8F",
+            "value": 12500,
+            "platforms": {
+              "Initial":20,
+              "Google": 30,
+              "Instagram":11,
+              "Facebook": 13,
+              "TikTok": 28
+            }
+          }
+        ]
       },
+    
       {
         id: "widget4",
         type: "feedbackScores",

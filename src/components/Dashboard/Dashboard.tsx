@@ -2,7 +2,12 @@ import React, { useEffect, useState } from "react";
 import "../../css/Dashboard/Dashboard.css";
 import Table1 from "./Widgets/Table1";
 import { DashboardData } from "../../types";
+import { ChartData } from "../../types";
 import Summary from "./Widgets/Summary";
+import LineChart from "./SubComponents/LineChart";
+import GoogleLineChart from "./SubComponents/GoogleLineChart";
+import MyChartComponent from "./SubComponents/MyChartComponent";
+import LineGraphWidget from "./Widgets/LineGraphWidget";
 
 const Dashboard: React.FC = () => {
   const [dashboardData, setDashboardData] = useState<DashboardData | null>(
@@ -21,12 +26,42 @@ const Dashboard: React.FC = () => {
   return (
     <div className="Dashboard">
       <div className="Dashboard-Elements">
-        <Table1
-          data={dashboardData?.widgets[0]}
-          today={true}
-          bgcolor="white"
-        ></Table1>
+        <LineGraphWidget
+          chartData={dashboardData?.widgets[2] as ChartData}
+          xLabelPresent={true}
+          bgcolor={"#282828"}
+          height={"415px"}
+          width={"190px"}
+        ></LineGraphWidget>
+        {/* <MyChartComponent></MyChartComponent> */}
+        <div style={{ display: "flex", justifyContent: "space-evenly" }}>
+          <div>
+            {/* <LineChart
+              chartData={dashboardData?.widgets[2] as ChartData}
+              xLabelPresent={true}
+            ></LineChart> */}
+            <LineGraphWidget
+              chartData={dashboardData?.widgets[2] as ChartData}
+              xLabelPresent={true}
+              bgcolor={"white"}
+              height={"415px"}
+              width={"190px"}
+            ></LineGraphWidget>
 
+            <LineGraphWidget
+              chartData={dashboardData?.widgets[2] as ChartData}
+              xLabelPresent={false}
+              bgcolor={"white"}
+              height={"190px"}
+              width={"190px"}
+            ></LineGraphWidget>
+          </div>
+          <Table1
+            data={dashboardData?.widgets[0]}
+            today={true}
+            bgcolor="white"
+          ></Table1>
+        </div>
         <Table1
           data={dashboardData?.widgets[0]}
           today={true}
@@ -44,6 +79,8 @@ const Dashboard: React.FC = () => {
           bgcolor={"white"}
           txtcolor="rgba(0,0,0,0.8)"
         ></Summary>
+
+        {/* <GoogleLineChart></GoogleLineChart> */}
       </div>
     </div>
   );

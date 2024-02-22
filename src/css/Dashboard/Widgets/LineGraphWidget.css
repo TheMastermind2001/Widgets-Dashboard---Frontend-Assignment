@@ -1,0 +1,22 @@
+.Line-Widget{
+    /* width: 190px; */
+    /* height: 415px; */
+    border-radius: 15px;
+    border: 1px;
+    /* background-color: ; */
+    border: 1px solid #E6E6E6;
+    box-shadow: 0px 0px 6px 0px #0000001A;
+}
+
+.Line-Widget-Chart{
+    
+}
+
+.Line-Chart{
+    height: 220px;
+    width: 170px;
+    /* height:90%; */
+    /* width:50%; */
+    margin: 10px auto auto;
+    
+}
