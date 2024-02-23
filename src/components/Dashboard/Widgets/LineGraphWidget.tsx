@@ -5,6 +5,7 @@ import { ChartData, LineWidgetFlexibleDimensionProps } from "../../../types";
 import "../../../css/Dashboard/Widgets/LineGraphWidget.css";
 
 import { LineWidgetProps } from "../../../types";
+import LineChartLegends from "../SubComponents/LineChartLegends";
 
 export default function LineGraphWidget({
   chartData,
@@ -32,9 +33,15 @@ export default function LineGraphWidget({
             chartData={chartData as ChartData}
             xLabelPresent={xLabelPresent}
             bgcolor={bgcolor}
-          ></LineChart>
+          ></LineChart>  
         </div>
       </div>
+      {(xLabelPresent)?
+      
+      <LineChartLegends chartData={chartData} bgcolor={bgcolor}></LineChartLegends>
+      
+      :
+      <></>}
     </div>
   );
 }

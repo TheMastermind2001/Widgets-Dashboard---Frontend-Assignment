@@ -1,0 +1,44 @@
+.Line-Chart-Legends{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: ; */
+    gap:9px;
+    width: 140px;
+    margin: 2px auto auto;
+}
+.Line-Chart-Legends-Color{
+    width: 3px;
+    height: 26px;
+}    
+    
+.Line-Chart-Legend{
+    display:flex;
+    gap:8px;
+}
+
+.Line-Chart-Legends-Text{
+    font-family: "Inter";
+font-size: 10px;
+font-weight: 500;
+line-height: 14px;
+letter-spacing: 0.02em;
+text-align: left;
+
+}
+
+
+.Line-Chart-Legends-Number{
+    font-family: "Inter";
+font-size: 14px;
+font-weight: 400;
+line-height: 14px;
+letter-spacing: 0.02em;
+text-align: left;
+
+}
+
+.Line-Chart-Legends-Text-Number{
+    position: relative;
+    bottom: 1px;
+    /* padding-bottom: 20spx; */
+}
