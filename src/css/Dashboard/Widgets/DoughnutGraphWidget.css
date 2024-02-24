@@ -1,0 +1,58 @@
+.Doughnut-Widget{
+    height:190px;
+    width:190px;
+       /* width: 190px; */
+    /* height: 415px; */
+    border-radius: 15px;
+    border: 1px;
+    /* background-color: ; */
+    border: 1px solid #E6E6E6;
+    box-shadow: 0px 0px 6px 0px #0000001A;
+}
+
+.Doughnut-Chart-Main{
+    position: relative;
+    height: 106px;
+    width: 106px;
+    margin: 23px auto auto;
+}
+
+.Doughnut-Chart-Text {
+    position: absolute;
+    top: 40%;
+    left: 29%;
+    /* margin: 0px auto auto; */
+    /* left: auto; */
+    /* right: auto; */
+    /* transform: translate(-50%, -50%); */
+    text-align: center;
+    color:"black" 
+  }
+
+  .Doughnut-Chart-Text-Number{
+    font-family: "Inter";
+font-size: 15px;
+font-weight: 400;
+line-height: 18px;
+letter-spacing: 0em;
+/* margi */
+text-align: center;
+color: #4F4F4F;
+
+
+  }
+
+
+  .Doughnut-Chart-Text-Text{
+    position: relative;
+    font-family: "Inter";
+font-size: 9px;
+font-weight: 500;
+line-height: 18px;
+letter-spacing: 0em;
+text-align: center;
+color:#BBBBBB;
+top:-5px
+
+  }
+

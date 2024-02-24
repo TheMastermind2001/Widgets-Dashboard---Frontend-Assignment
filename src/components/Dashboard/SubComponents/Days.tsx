@@ -17,6 +17,13 @@ function Days({ color }: Props) {
     "#5E5ADB": "#FFFFFF",
     "#282828": "#A0A0A0",
   };
+  const HRColor: any = {
+    white: "#E1E1E1",
+    // "#5E5ADB": "rgba(255,255,255,0.4)",
+    "#5E5ADB": "rgba(225,225,225,0.4)",
+    "#282828": "#363636",
+  };
+
   const [selectedIdx, setSelectedIdx] = useState(1);
   return (
     <div className="Days-Div-Main">
@@ -69,7 +76,10 @@ function Days({ color }: Props) {
         </div>
       </div>
       <div className="Horizontal-Line-Div">
-        <hr className="Horizontal-Line"></hr>
+        <hr
+          style={{ border: "0.5px solid " + HRColor[color] }}
+          className="Horizontal-Line"
+        ></hr>
         <hr
           className="Bold-Line"
           style={{

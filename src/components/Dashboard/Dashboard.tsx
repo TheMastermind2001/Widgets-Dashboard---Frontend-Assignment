@@ -8,6 +8,8 @@ import LineChart from "./SubComponents/LineChart";
 import GoogleLineChart from "./SubComponents/GoogleLineChart";
 import MyChartComponent from "./SubComponents/MyChartComponent";
 import LineGraphWidget from "./Widgets/LineGraphWidget";
+import DoughnutGraphWidget from "./Widgets/DoughnutGraphWidget";
+import BarGraphWidget from "./Widgets/BarGraphWidget";
 
 const Dashboard: React.FC = () => {
   const [dashboardData, setDashboardData] = useState<DashboardData | null>(
@@ -33,6 +35,13 @@ const Dashboard: React.FC = () => {
           height={"415px"}
           width={"190px"}
         ></LineGraphWidget>
+        <LineGraphWidget
+          chartData={dashboardData?.widgets[3] as ChartData}
+          xLabelPresent={true}
+          bgcolor={"#282828"}
+          height={"623px"}
+          width={"190px"}
+        ></LineGraphWidget>
         {/* <MyChartComponent></MyChartComponent> */}
         <div style={{ display: "flex", justifyContent: "space-evenly" }}>
           <div>
@@ -55,6 +64,30 @@ const Dashboard: React.FC = () => {
               height={"190px"}
               width={"190px"}
             ></LineGraphWidget>
+
+            <DoughnutGraphWidget
+              data={dashboardData?.widgets[6]}
+              bgcolor="white"
+            ></DoughnutGraphWidget>
+            <BarGraphWidget
+              data={dashboardData?.widgets[7]}
+              bgcolor={"white"}
+              height={"405px"}
+              width={"190px"}
+              limit={45}
+            ></BarGraphWidget>
+
+            <BarGraphWidget
+              data={dashboardData?.widgets[8]}
+              bgcolor={"#282828"}
+              height={"190px"}
+              width={"208px"}
+              limit={40}
+            ></BarGraphWidget>
+            {/* <DoughnutGraphWidget
+              data={dashboardData?.widgets[6]}
+              bgcolor="#282828"
+            ></DoughnutGraphWidget> */}
           </div>
           <Table1
             data={dashboardData?.widgets[0]}

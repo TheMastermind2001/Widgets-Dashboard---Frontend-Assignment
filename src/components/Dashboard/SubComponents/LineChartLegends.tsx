@@ -15,17 +15,26 @@ export default function LineChartLegends({ chartData, bgcolor }: Props) {
   };
   const NumberColorLineLegends: any = {
     white: "#4F4F4F",
+    // white: "red",
     "#5E5ADB": "rgba(255,255,255,0.9)",
     "#282828": "#F3F3F3",
   };
   const HRColorLineLegends: any = {
     white: "#EDEDED",
+    // white: "red",
     "#5E5ADB": "rgba(225,225,225,0.4)",
     "#282828": "rgba(114,114,114,0.4)",
   };
   return (
     <div className="Line-Chart-Legends">
-      <hr style={{ color: HRColorLineLegends[bgcolor], width: "100px" }}></hr>
+      <hr 
+        className="Line-Chart-HR"
+        style={{
+          backgroundColor: HRColorLineLegends[bgcolor],
+          border: "1px solid " + HRColorLineLegends[bgcolor],
+          
+        }}
+      ></hr>
       {chartData?.data.map((item: any) => {
         return (
           <div className="Line-Chart-Legend">

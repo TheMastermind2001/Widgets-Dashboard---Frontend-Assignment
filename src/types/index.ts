@@ -54,3 +54,6 @@ export interface PlatformData {
     height: string,
     width: string
   }
+
+
+  

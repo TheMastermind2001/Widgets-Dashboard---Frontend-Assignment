@@ -60,7 +60,7 @@ const LineChart: React.FC<LineWidgetProps> = ({
         ticks: {
           display: xLabelPresent ? true : false,
           font: {
-            size: 12, // Example font size, adjust as needed
+            size: 11, // Example font size, adjust as needed
             family: "Inter", // Set your desired font family here
             weight: 500,
             // color: "red", // Set your desired font color here
@@ -90,7 +90,7 @@ const LineChart: React.FC<LineWidgetProps> = ({
           },
 
           font: {
-            size: 12, // Example font size, adjust as needed
+            size: 11, // Example font size, adjust as needed
             family: "Inter", // Set your desired font family here
             weight: 500,
             // Set your desired font color here

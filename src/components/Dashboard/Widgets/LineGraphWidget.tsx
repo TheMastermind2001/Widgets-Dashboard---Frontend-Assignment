@@ -13,7 +13,7 @@ export default function LineGraphWidget({
   bgcolor,
   height,
   width,
-}: LineWidgetFlexibleDimensionProps) {
+}: LineWidgetFlexibleDimensionProps){
   return (
     <div
       className="Line-Widget"
@@ -33,15 +33,19 @@ export default function LineGraphWidget({
             chartData={chartData as ChartData}
             xLabelPresent={xLabelPresent}
             bgcolor={bgcolor}
-          ></LineChart>  
+          ></LineChart>
         </div>
       </div>
-      {(xLabelPresent)?
-      
-      <LineChartLegends chartData={chartData} bgcolor={bgcolor}></LineChartLegends>
-      
-      :
-      <></>}
+      {xLabelPresent ? (
+        // <div className="Line-Chart-Legends-Main">
+        <LineChartLegends
+          chartData={chartData}
+          bgcolor={bgcolor}
+        ></LineChartLegends>
+      ) : (
+        // </div>
+        <></>
+      )}
     </div>
   );
 }

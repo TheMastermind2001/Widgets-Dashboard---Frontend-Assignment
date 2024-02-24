@@ -1,0 +1,14 @@
+.Bar-Widget{
+    border-radius: 15px;
+    border: 1px;
+    /* background-color: ; */
+    border: 1px solid #E6E6E6;
+    box-shadow: 0px 0px 6px 0px #0000001A;
+}
+
+.Bar-Widget-Main{
+
+    /* height:75%; */
+    width: 160px;
+    margin: 20px auto auto;
+}

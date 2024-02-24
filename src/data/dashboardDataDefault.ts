@@ -84,7 +84,71 @@ const dashboardDataDefault = {
           }
         ]
       },
-    
+      {
+        "timeframe": "7d",
+        "data": [
+          {
+            "name": "Christmas25",
+            "color": "#FF8E8E",
+            "value": 5700,
+            "platforms": {
+              "Initial":15,
+              "Google": 11,
+              "Instagram": 5,
+              "Facebook": 9,
+              "TikTok": 7
+            }
+          },
+          {
+            "name": "BirthdaySpecial25",
+            "color": "#5E5ADB",
+            "value": 27000,
+            "platforms": {
+              "Initial":6,
+              "Google": 21,
+              "Instagram": 27,
+              "Facebook": 3,
+              "TikTok": 1
+            }
+          },
+          {
+            "name": "Newuser30",
+            "color": "#5FDC8F",
+            "value": 12500,
+            "platforms": {
+              "Initial":20,
+              "Google": 30,
+              "Instagram":11,
+              "Facebook": 13,
+              "TikTok": 28
+            }
+          },
+          {
+            "name": "Newuser30",
+            "color": "#82D1DB",
+            "value": 16000,
+            "platforms": {
+              "Initial":0,
+              "Google": 3,
+              "Instagram":2,
+              "Facebook": 1,
+              "TikTok": 4
+              }
+          },
+          {
+            "name": "Newuser30",
+            "color": "#F0AB24",
+            "value": 17500,
+            "platforms": {
+              "Initial":10,
+              "Google": 15,
+              "Instagram":20,
+              "Facebook": 17.5,
+              "TikTok": 15
+            }
+          }
+        ]
+      },
       {
         id: "widget4",
         type: "feedbackScores",
@@ -106,6 +170,37 @@ const dashboardDataDefault = {
             { period: "Nov2023", newUsers: 16700 },
             { period: "Dec2023", newUsers: 17500 },
             // Add more periods as needed
+          ],
+        },
+      },
+      {
+        id: "widget6",
+        type: "orders",
+        title: "Orders",
+        data: {
+          orders:[
+            {color:"#54D787",value:25},{color:"#FF6969",value:30},{color:"#5E5ADB",value:30},{color:"#F2E144",value:15}
+          ],
+          totalOrders: 89000
+        },
+      },
+      {
+        id: "widget7",
+        type: "bar",
+        title: "Bar",
+        data: {
+          array:[
+            {color:"#F1E254",value:29},{color:"#FF8E8E",value:44},{color:"#96D3FF",value:21},{color:"#5FDC8F",value:33},{color:"#F182F3",value:9},{color:"#5E5ADB",value:26}
+          ],
+        },
+      },
+      {
+        id: "widget8",
+        type: "bar",
+        title: "Bar",
+        data: {
+          array:[
+            {color:"#F1E254",value:25},{color:"#FF8E8E",value:38},{color:"#96D3FF",value:16},{color:"#5FDC8F",value:28},{color:"#F182F3",value:7},{color:"#5E5ADB",value:20}
           ],
         },
       },

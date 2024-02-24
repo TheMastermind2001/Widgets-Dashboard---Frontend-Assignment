@@ -1,8 +1,10 @@
 .Line-Chart-Legends{
+    height: 35%;
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     /* justify-content: ; */
-    gap:9px;
+    /* gap:9px; */
     width: 140px;
     margin: 2px auto auto;
 }
@@ -41,4 +43,14 @@ text-align: left;
     position: relative;
     bottom: 1px;
     /* padding-bottom: 20spx; */
+}
+
+.Line-Chart-HR{
+    position: relative;
+    width: 160px;   
+    left:-10px;
+    /* right:auto; */
+    margin: 0px auto auto;
+    margin-bottom: -5px;
+
 }

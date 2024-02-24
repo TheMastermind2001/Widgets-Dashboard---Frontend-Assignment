@@ -75,7 +75,8 @@
     top: -16.7px; /* Adjust this value to position the line right below the headers */
     bottom:0px;
     width: 0.2px;
-    background-color:  #f2efef;
+    /* background-color:  #f2efef; */
+    background-color: rgba(246,246,246,0.1);
     ; /* Match this to your table's line color */
 }
 
@@ -88,8 +89,9 @@
     position: absolute;
     right: 0px;
     bottom:0px;
-    width: 0.2px;
-    background-color:  #f2efef;
+    width: 0.2  px;
+    /* background-color:  #f2efef; */
+    background-color: rgba(246,246,246,0.1);
     /* Match this to your table's line color */
 }
 
