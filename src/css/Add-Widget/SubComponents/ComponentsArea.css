@@ -1,0 +1,170 @@
+.Add-Widget-Components-Area{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.Add-Widget-Components-Area-Data{
+    width: 325px;
+height:78px;
+top: 167px;
+left: 699px;
+/* padding: 16px; */
+border-radius: 8px;
+border: 1.5px;
+/* border: 1.5px solid #5E5ADB; */
+border: 2px solid #E4E4E7;
+cursor: pointer;
+
+}
+
+
+.Add-Widget-Components-Area-Data:hover{
+    border: 2px solid #5E5ADB;
+    box-shadow: 0px 2px 4px 0px #00000040;
+}
+
+.Add-Widget-Components-Area-Data-Text{
+    position: relative;
+    padding: 2px;
+    width: 293px;
+    height: 46px;
+    top:15px;
+    left: 15px;
+    gap: 2px;
+
+}
+
+.Add-Widget-Components-Area-Data-Text-1{
+    font-family: "Inter";
+font-size: 16px;
+font-weight: 500;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: left;
+color: #585858;
+margin:0;
+
+
+}
+
+
+.Add-Widget-Components-Area-Data-Text-2{
+    margin:0;
+    font-family: "Inter";
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:#888891;
+    
+
+}
+
+
+
+/*------------------------------------GRAPH---------------------------------------------------------------------------------------------*/
+
+
+
+.Add-Widget-Components-Area-Graph{
+    width: 325px;
+    height:104px;
+    top: 167px;
+    left: 699px;
+    /* padding: 16px; */
+    border-radius: 8px;
+    border: 1.5px;
+    /* border: 1.5px solid #5E5ADB; */
+    border: 2px solid #E4E4E7;
+    cursor: pointer;
+
+}
+
+
+.Add-Widget-Components-Area-Graph:hover{
+    border: 2px solid #5E5ADB;
+    box-shadow: 0px 2px 4px 0px #00000040;
+}
+
+.Add-Widget-Components-Area-Graph-Text{
+    position: relative;
+    padding: 2px;
+    width: 293px;
+    height: 46px;
+    top:15px;
+    left: 15px;
+    gap: 2px;
+
+}
+
+.Add-Widget-Components-Area-Graph-Text-1{
+    font-family: "Inter";
+font-size: 16px;
+font-weight: 500;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: left;
+color: #585858;
+margin:0;
+
+
+}
+
+
+.Add-Widget-Components-Area-Graph-Text-2{
+    margin:0;
+    font-family: "Inter";
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:#888891;
+    
+
+}
+
+.Add-Widget-Components-Area-Graph-Icons{
+    /* position: relative; */
+    /* top:0px; */
+    margin-top: 8px;
+    width: 141px;
+height: 25px;
+top: 65px;
+left: 16px;
+/* padding: 2.82px; */
+border-radius: 5.64px;
+background-color: #F4F4F5;
+display: flex;
+
+    
+}
+
+
+.Add-Widget-Components-Area-Graph-Icons-Image{
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 45.12px;
+height: 19.74px;
+/* padding: 4.23px, 8.46px, 4.23px, 8.46px */
+border-radius: 4.23px;
+text-align: center;
+/* gap: 7.05px */
+
+}
+
+
+.Add-Widget-Components-Area-Graph-Icons-Image:hover{
+    background-color: #F4F4F5;
+
+
+}
+
+.Add-Widget-Components-Area-Graph-Icons>img{
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 11.67px;
+    width: 11.67px;
+}
