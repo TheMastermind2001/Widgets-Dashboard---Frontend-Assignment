@@ -11,3 +11,132 @@
             onClick={() => {
               setSelectedIdx(2);
             }}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            return(
+     <div className="Dashboard">
+       <div className="Dashboard-Elements">
+         <LineGraphWidget
+          chartData={dashboardData?.widgets[2] as ChartData}
+          xLabelPresent={true}
+          bgcolor={"#282828"}
+          height={"415px"}
+          width={"190px"}
+        ></LineGraphWidget>
+        <LineGraphWidget
+          chartData={dashboardData?.widgets[3] as ChartData}
+          xLabelPresent={true}
+          bgcolor={"#282828"}
+          height={"623px"}
+          width={"190px"}
+        ></LineGraphWidget>
+        {/* <MyChartComponent></MyChartComponent> */}
+        <div style={{ display: "flex", justifyContent: "space-evenly" }}>
+          <div>
+            <LineGraphWidget
+              chartData={dashboardData?.widgets[2] as ChartData}
+              xLabelPresent={true}
+              bgcolor={"white"}
+              height={"415px"}
+              width={"190px"}
+            ></LineGraphWidget>
+
+            <LineGraphWidget
+              chartData={dashboardData?.widgets[2] as ChartData}
+              xLabelPresent={false}
+              bgcolor={"white"}
+              height={"190px"}
+              width={"190px"}
+            ></LineGraphWidget>
+
+            <DoughnutGraphWidget
+              data={dashboardData?.widgets[6]}
+              bgcolor="white"
+            ></DoughnutGraphWidget>
+            <BarGraphWidget
+              data={dashboardData?.widgets[7]}
+              bgcolor={"white"}
+              height={"405px"}
+              width={"190px"}
+              limit={45}
+            ></BarGraphWidget>
+
+            <BarGraphWidget
+              data={dashboardData?.widgets[8]}
+              bgcolor={"#282828"}
+              height={"190px"}
+              width={"208px"}
+              limit={40}
+            ></BarGraphWidget>
+
+            <BarGraphWidget
+              data={dashboardData?.widgets[8]}
+              bgcolor={"#282828"}
+              height={"190px"}
+              width={"208px"}
+              limit={40}
+              noradius={true}
+            ></BarGraphWidget>
+          </div>
+          <Table1
+            data={dashboardData?.widgets[0]}
+            today={false}
+            bgcolor="white"
+          ></Table1>
+          <Table1
+            data={dashboardData?.widgets[0]}
+            today={false}
+            bgcolor="white"
+            noradius={true}
+          ></Table1>
+          <Table2
+            data={dashboardData?.widgets[9]}
+            today={false}
+            bgcolor="#282828"
+          ></Table2>
+        </div>
+        <Table1
+          data={dashboardData?.widgets[0]}
+          today={true}
+          bgcolor="#5E5ADB"
+        ></Table1>
+
+        <Table1
+          data={dashboardData?.widgets[0]}
+          today={true}
+          bgcolor="#282828"
+        ></Table1>
+
+        <Summary
+          data={dashboardData?.widgets[1]}
+          bgcolor={"white"}
+          txtcolor="rgba(0,0,0,0.8)"
+        ></Summary>
+        <Summary
+          data={dashboardData?.widgets[1]}
+          bgcolor={"white"}
+          txtcolor="rgba(0,0,0,0.8)"
+          noradius={true}
+        ></Summary>
+
+        <CombinedWidget dashboardData={dashboardData}></CombinedWidget>
+
+      </div>
+    </div>
+  );

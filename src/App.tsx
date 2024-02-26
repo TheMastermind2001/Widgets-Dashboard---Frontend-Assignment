@@ -18,7 +18,7 @@ function App() {
   // );
   useEffect(() => {
     const storedWidgets = localStorage.getItem("dashboardDataDefault");
-    console.log(storedWidgets);
+    // console.log(storedWidgets);
     if (storedWidgets) {
       // Ensure you parse the stored string into JSON
       const parsedData: DashboardData = JSON.parse(storedWidgets);
@@ -36,7 +36,7 @@ function App() {
       <SideNavBar></SideNavBar>
       <TopNavBar></TopNavBar>
       <Dashboard></Dashboard>
-      {/* <AddWidgetScreen></AddWidgetScreen> */}
+      <AddWidgetScreen></AddWidgetScreen>
     </div>
   );
 }
