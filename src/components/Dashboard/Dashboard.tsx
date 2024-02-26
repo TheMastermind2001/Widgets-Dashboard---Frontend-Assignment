@@ -14,16 +14,13 @@ import { useDispatch, useSelector } from "react-redux";
 import { setData } from "../../features/data/dataSlice";
 import Table2 from "./Widgets/Table2";
 import CombinedWidget from "./Widgets/CombinedWidget";
+import { setFinal } from "../../features/finaloptions/finaloptionsSlice";
 
 const renderComponent = (
   bgcolor: string,
   data: DashboardData,
   finaloption: any
 ) => {
-  // const finaloption = useSelector((state: any) => state.setFinal.finaloption);
-  // if(finaloption==null){
-  //   return null;
-  // }
   switch (finaloption) {
     case "Data":
       return <Table1 data={data?.widgets[0]} today={false} bgcolor={bgcolor} />;
@@ -69,7 +66,6 @@ const renderComponent = (
 };
 
 const Dashboard: React.FC = () => {
-  // const arr: any = [];
   const [arr, setArr] = useState<any>([]);
   const dispatch = useDispatch();
   let data = useSelector((state: any) => state.setData.dashboardData);
@@ -83,9 +79,7 @@ const Dashboard: React.FC = () => {
   );
   useEffect(() => {
     const storedWidgets = localStorage.getItem("dashboardDataDefault");
-    // console.log(storedWidgets);
     if (storedWidgets) {
-      // Ensure you parse the stored string into JSON
       const parsedData: DashboardData = JSON.parse(storedWidgets);
       console.log(parsedData);
       setDashboardData(parsedData);
@@ -99,44 +93,16 @@ const Dashboard: React.FC = () => {
           ...arr,
           renderComponent(finalbgcolor, parsedData, finaloption),
         ]);
+        dispatch(setFinal(""));
       }
     }
   }, [finaloption]);
 
   useEffect(() => {
     const storedWidgets = localStorage.getItem("dashboardDataDefault");
-    // console.log(storedWidgets);
     if (storedWidgets) {
-      // Ensure you parse the stored string into JSON
       const parsedData: DashboardData = JSON.parse(storedWidgets);
-      // console.log(parsedData);
       setDashboardData(parsedData);
-      // dispatch(setData(parsedData));
-      // console.log(data);
-      // setArr([
-      //   ...arr,
-      //   <div className="Dashboard-Item">
-      //     <LineGraphWidget
-      //       chartData={dashboardData?.widgets[2] as ChartData}
-      //       xLabelPresent={true}
-      //       bgcolor={"#282828"}
-      //       height={"190px"}
-      //       width={"190px"}
-      //     ></LineGraphWidget>
-      //   </div>,
-      // ]);
-
-      // arr.push(
-      //   <div className="Dashboard-Item">
-      //     <LineGraphWidget
-      //       chartData={dashboardData?.widgets[2] as ChartData}
-      //       xLabelPresent={true}
-      //       bgcolor={"#282828"}
-      //       height={"190px"}
-      //       width={"190px"}
-      //     ></LineGraphWidget>
-      //   </div>
-      // );
     }
   }, [data, dispatch]);
 
