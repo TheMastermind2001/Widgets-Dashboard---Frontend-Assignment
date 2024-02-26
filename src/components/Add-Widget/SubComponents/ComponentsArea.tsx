@@ -15,7 +15,7 @@ export default function ComponentsArea({ setOption }: Props) {
   const handleClick = (s: string) => {
     setOption(s);
     dispatch(click(s));
-    dispatch(setBackground("white"));
+    // dispatch(setBackground("white"));
   };
   return (
     <div className="Add-Widget-Components-Area">

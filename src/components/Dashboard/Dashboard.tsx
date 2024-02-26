@@ -26,7 +26,7 @@ const Dashboard: React.FC = () => {
       const parsedData: DashboardData = JSON.parse(storedWidgets);
       console.log(parsedData);
       setDashboardData(parsedData);
-      dispatch(setData(parsedData));
+      // dispatch(setData(parsedData));
       console.log(data);
     }
   }, [dashboardData, data, dispatch]);

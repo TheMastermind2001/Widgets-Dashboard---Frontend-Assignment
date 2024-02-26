@@ -35,8 +35,8 @@ function App() {
     <div className="App">
       <SideNavBar></SideNavBar>
       <TopNavBar></TopNavBar>
-      {/* <Dashboard></Dashboard> */}
-      <AddWidgetScreen></AddWidgetScreen>
+      <Dashboard></Dashboard>
+      {/* <AddWidgetScreen></AddWidgetScreen> */}
     </div>
   );
 }
