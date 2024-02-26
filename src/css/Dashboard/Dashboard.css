@@ -22,6 +22,7 @@
 }
 
 .Dashboard-Elements{
+  margin: 10px auto auto;
     position: relative;
     top:28px;
     left: 28px;
@@ -36,15 +37,17 @@
 
     /* grid-template-rows:  repeat(auto-fill,minmax(200px,200px)); */
     
-    max-width: 1320px;
+    /* max-width: 1320px; */
+
+    max-width: 1278px;
     /* max-width: 1px; */
     /* grid-template-rows: repeat(4,1fr); */
     /* display: grid; */
     /* grid-template-areas: */
       /* 'a b c' */
       /* 'd e f'; */
-    grid-column-gap: 28px;
-    grid-row-gap: 28px;
+    grid-column-gap: 29px;
+    grid-row-gap: 29px;
 
     /* position: relative; */
     /* height: calc(100% - 29px); */

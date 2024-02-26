@@ -21,7 +21,7 @@ export default function CombinedWidget({ dashboardData }: Props) {
         data={dashboardData?.widgets[8]}
         bgcolor={"#282828"}
         height={"190px"}
-        width={"208px"}
+        width={"204px"}
         limit={40}
         noradius={true}
       ></BarGraphWidget>
