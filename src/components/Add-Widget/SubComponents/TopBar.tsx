@@ -3,9 +3,11 @@ import "../../../css/Add-Widget/SubComponents/TopBar.css";
 import image1 from "../../../images/_Nav item button.png";
 import image2 from "../../../images/Multiple-Cicles-Top-Bar.png";
 import image3 from "../../../images/Cross-Top-Bar-Right-Large.png";
+import { useNavigate } from "react-router-dom";
 type Props = {};
 
 export default function TopBar({}: Props) {
+  const navigate = useNavigate();
   return (
     <div className="Add-Widget-Top-Bar">
       <div className="Add-Widget-Top-Bar-Left">
@@ -22,6 +24,9 @@ export default function TopBar({}: Props) {
       </div>
       <div className="Add-Widget-Top-Bar-Right">
         <img
+          onClick={() => {
+            navigate("/");
+          }}
           className="Add-Widget-Top-Bar-Cross"
           style={{ height: "16px", width: "16px" }}
           src={image3}

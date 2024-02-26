@@ -22,10 +22,10 @@
 }
 
 .Dashboard-Elements{
-  margin: 10px auto auto;
+  /* margin: 10px auto auto; */
     position: relative;
     top:28px;
-    left: 28px;
+    left: 60px;
     /* background-color: aqua; */
     /* height: 100px; */
     /* width: 100px; */
