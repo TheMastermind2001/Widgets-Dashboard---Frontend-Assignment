@@ -1,3 +1,10 @@
+Instructions:
+cd to the main project file and then:-
+1). npm install
+2). npm start App.js
+This starts the development server which is essentially the app.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
