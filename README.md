@@ -1,3 +1,6 @@
+
+DEPLOYED LINK: https://my-dashboard-app-d20a9.web.app/
+
 Instructions:
 cd to the main project file and then:-
 1). npm install
