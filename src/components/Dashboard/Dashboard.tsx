@@ -143,17 +143,102 @@ const Dashboard: React.FC = () => {
   return (
     <div className="Dashboard">
       <div className="Dashboard-Elements">
-        {/* <div className="Dashboard-Item-1"></div>
-        <div className="Dashboard-Item-2"></div>
-        <div className="Dashboard-Item-3"></div>
-        <div className="Dashboard-Item-4"></div>
-        <div className="Dashboard-Item-5"></div>
-        <div className="Dashboard-Item-6"></div>
-        <div className="Dashboard-Item-7"></div>
-        <div className="Dashboard-Item-8"></div>
-        <div className="Dashboard-Item-9"></div>
-        <div className="Dashboard-Item-10"></div>
-        <div className="Dashboard-Item-11"></div> */}
+        <div className="Dashboard-Item-1">
+          <Table1
+            data={dashboardData?.widgets[0]}
+            today={false}
+            bgcolor="white"
+          ></Table1>
+        </div>
+        <div className="Dashboard-Item-2">
+          <Table1
+            data={dashboardData?.widgets[0]}
+            today={true}
+            bgcolor="#5E5ADB"
+          ></Table1>
+        </div>
+        <div className="Dashboard-Item-3">
+          <CombinedWidget dashboardData={dashboardData}></CombinedWidget>
+        </div>
+        <div className="Dashboard-Item-4">
+          <Table2
+            data={dashboardData?.widgets[9]}
+            today={false}
+            bgcolor="#282828"
+          ></Table2>
+        </div>
+        <div className="Dashboard-Item-5">
+          <Summary
+            data={dashboardData?.widgets[1]}
+            bgcolor={"white"}
+            txtcolor="rgba(0,0,0,0.8)"
+          ></Summary>
+        </div>
+        <div className="Dashboard-Item-6">
+          <LineGraphWidget
+            chartData={dashboardData?.widgets[3] as ChartData}
+            xLabelPresent={true}
+            bgcolor={"#282828"}
+            height={"623px"}
+            width={"190px"}
+          ></LineGraphWidget>
+        </div>
+        <div className="Dashboard-Item-7">
+          <DoughnutGraphWidget
+            data={dashboardData?.widgets[6]}
+            bgcolor="white"
+          ></DoughnutGraphWidget>
+        </div>
+        <div className="Dashboard-Item-8">
+          <BarGraphWidget
+            data={dashboardData?.widgets[7]}
+            bgcolor={"white"}
+            height={"405px"}
+            width={"190px"}
+            limit={45}
+          ></BarGraphWidget>
+        </div>
+        <div className="Dashboard-Item-9">
+          <Table1
+            data={dashboardData?.widgets[0]}
+            today={true}
+            bgcolor="#282828"
+          ></Table1>
+        </div>
+        <div className="Dashboard-Item-10">
+          <Table1
+            data={dashboardData?.widgets[0]}
+            today={true}
+            bgcolor="#5E5ADB"
+          ></Table1>
+        </div>
+        <div className="Dashboard-Item-11">
+          {" "}
+          <LineGraphWidget
+            chartData={dashboardData?.widgets[2] as ChartData}
+            xLabelPresent={true}
+            bgcolor={"white"}
+            height={"415px"}
+            width={"190px"}
+          ></LineGraphWidget>
+        </div>
+        <div className="Dashboard-Item-12">
+          {" "}
+          <Table1
+            data={dashboardData?.widgets[0]}
+            today={true}
+            bgcolor="#282828"
+          ></Table1>
+        </div>
+        <div className="Dashboard-Item-13">
+          <LineGraphWidget
+            chartData={dashboardData?.widgets[2] as ChartData}
+            xLabelPresent={false}
+            bgcolor={"white"}
+            height={"190px"}
+            width={"190px"}
+          ></LineGraphWidget>
+        </div>
         {arr.map((item: any) => {
           return item;
         })}
