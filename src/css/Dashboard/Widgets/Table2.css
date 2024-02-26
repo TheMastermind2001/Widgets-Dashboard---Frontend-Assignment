@@ -1,6 +1,6 @@
-.Table1{
-    width: 190px;
-    height: 190px;
+.Table2{
+    width: 418px;
+    height: 408px;
     border-radius: 15px;
     border: 1px;
     /* background-color: ; */
@@ -11,27 +11,27 @@
 }
 
 
-.Table1-Contents{
+.Table2-Contents{
     position: relative;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 15px;
 }
 
-.Table1-Row{
+.Table2-Row{
     /* background-color: antiquewhite; */
     display: grid;
-    grid-template-columns: 1.6fr 1fr 1fr;
+    grid-template-columns: 2.5fr 1fr 1fr 1fr 1fr 1fr;
 
 }
 
-.Table1-Cell{
+.Table2-Cell{
     position:relative;
     /* position: relative; */
     height: 20px;
 }
 
-.Table1-Cell>h1{
+.Table2-Cell>h1{
     margin: 0;
     font-family: "Inter";
     font-size: 11px;
@@ -43,12 +43,12 @@
     ;
 }
 
-.Table1-Header>div>h1.Table1-Header-Cell-1{
+.Table2-Header>div>h1.Table2-Header-Cell-1{
     color: #5E5ADB;
     font-weight: 700;
 
 }
-.Table1-Header>div>h1{
+.Table2-Header>div>h1{
     color: #ABA8FF;
    
 
@@ -56,19 +56,19 @@
 
 }
 
-.Table1-Footer{
+.Table2-Footer{
     /* Just for the vertical lines*/
     /* padding-bottom: 20px; */
 }
 
-.Table1-Footer>div>h1{
+.Table2-Footer>div>h1{
     color: black;
     font-weight: 600;
     padding-top: 5px;
 }
 
 
-.Table1-Cell:not(:last-child)::after {
+.Table2-Cell:not(:last-child)::after {
     content: "";
     position: absolute;
     right: 0px;
@@ -76,37 +76,28 @@
     bottom:0px;
     width: 0.2px;
     /* background-color:  #f2efef; */
-    background-color: rgba(246,246,246,0.07);
+    background-color: rgba(246,246,246,0.1);
     ; /* Match this to your table's line color */
-    color: rgba(246,246,246,0.07);
-    border-color:  rgba(246,246,246,0.07);
 }
 
-.Table1-Footer-Cell{
+.Table2-Footer-Cell{
     padding-bottom: 20px;
 }
 
-.Table1-Footer-Cell:not(:last-child)::after {
+.Table2-Footer-Cell:not(:last-child)::after {
     content: "";
     position: absolute;
     right: 0px;
     bottom:0px;
     width: 0.2  px;
     /* background-color:  #f2efef; */
-    background-color: rgba(246,246,246,0.07);
-    color:rgba(246,246,246,0.07);
-    border-color:  rgba(246,246,246,0.07);
+    background-color: rgba(246,246,246,0.1);
     /* Match this to your table's line color */
 }
 
 /* Adjust the top value of the first row cells to align with the bottom of your headers */
-.Table1-Header + .Table1-Row .Table1-Cell:not(:last-child)::after {
+.Table2-Header + .Table2-Row .Table2-Cell:not(:last-child)::after {
     top: 0;
-    background-color: rgba(246,246,246,0.07);
-    color:rgba(246,246,246,0.07);
-    border-color:  rgba(246,246,246,0.07);
-    /* color:rgba(246,246,246,0.7); */
-    /* background-color: rgba(246,246,246,0.7); */
 }
 
 
@@ -121,16 +112,16 @@
 
 
 
-/* .Table1-Footer>div>h1.Table1-Footer-Cell-1{
+/* .Table2-Footer>div>h1.Table2-Footer-Cell-1{
     color: #5E5ADB;
     font-weight: 700;
 
 } */
-/* .Table1-Footer>div>h1{
+/* .Table2-Footer>div>h1{
     color: #ABA8FF;
 } */
 
-/* .Table1-Header-Cell-1{ */
+/* .Table2-Header-Cell-1{ */
     /* font-weight: 700; */
     /* color: black; */
 /* } */

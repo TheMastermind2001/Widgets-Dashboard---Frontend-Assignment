@@ -10,6 +10,7 @@ type Props = {
   height: string;
   width: string;
   limit: number;
+  noradius?: boolean;
 };
 
 export default function BarGraphWidget({
@@ -18,6 +19,7 @@ export default function BarGraphWidget({
   height,
   width,
   limit,
+  noradius,
 }: Props) {
   const TextColor: any = {
     white: "rgba(71,71,71,0.4)",
@@ -109,7 +111,13 @@ export default function BarGraphWidget({
 
   return (
     <div
-      style={{ height: height, width: width, backgroundColor: bgcolor }}
+      style={{
+        borderTopRightRadius: noradius ? "0px" : "15px",
+        borderBottomRightRadius: noradius ? "0px" : "15px",
+        height: height,
+        width: width,
+        backgroundColor: bgcolor,
+      }}
       className="Bar-Widget"
     >
       <Days color={bgcolor}></Days>

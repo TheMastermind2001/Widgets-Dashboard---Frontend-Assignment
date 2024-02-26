@@ -12,6 +12,8 @@ import DoughnutGraphWidget from "./Widgets/DoughnutGraphWidget";
 import BarGraphWidget from "./Widgets/BarGraphWidget";
 import { useDispatch, useSelector } from "react-redux";
 import { setData } from "../../features/data/dataSlice";
+import Table2 from "./Widgets/Table2";
+import CombinedWidget from "./Widgets/CombinedWidget";
 const Dashboard: React.FC = () => {
   const dispatch = useDispatch();
   let data = useSelector((state: any) => state.setData.dashboardData);
@@ -51,10 +53,6 @@ const Dashboard: React.FC = () => {
         {/* <MyChartComponent></MyChartComponent> */}
         <div style={{ display: "flex", justifyContent: "space-evenly" }}>
           <div>
-            {/* <LineChart
-              chartData={dashboardData?.widgets[2] as ChartData}
-              xLabelPresent={true}
-            ></LineChart> */}
             <LineGraphWidget
               chartData={dashboardData?.widgets[2] as ChartData}
               xLabelPresent={true}
@@ -90,16 +88,32 @@ const Dashboard: React.FC = () => {
               width={"208px"}
               limit={40}
             ></BarGraphWidget>
-            {/* <DoughnutGraphWidget
-              data={dashboardData?.widgets[6]}
-              bgcolor="#282828"
-            ></DoughnutGraphWidget> */}
+
+            <BarGraphWidget
+              data={dashboardData?.widgets[8]}
+              bgcolor={"#282828"}
+              height={"190px"}
+              width={"208px"}
+              limit={40}
+              noradius={true}
+            ></BarGraphWidget>
           </div>
           <Table1
             data={dashboardData?.widgets[0]}
-            today={true}
+            today={false}
             bgcolor="white"
           ></Table1>
+          <Table1
+            data={dashboardData?.widgets[0]}
+            today={false}
+            bgcolor="white"
+            noradius={true}
+          ></Table1>
+          <Table2
+            data={dashboardData?.widgets[9]}
+            today={false}
+            bgcolor="#282828"
+          ></Table2>
         </div>
         <Table1
           data={dashboardData?.widgets[0]}
@@ -118,6 +132,14 @@ const Dashboard: React.FC = () => {
           bgcolor={"white"}
           txtcolor="rgba(0,0,0,0.8)"
         ></Summary>
+        <Summary
+          data={dashboardData?.widgets[1]}
+          bgcolor={"white"}
+          txtcolor="rgba(0,0,0,0.8)"
+          noradius={true}
+        ></Summary>
+
+        <CombinedWidget dashboardData={dashboardData}></CombinedWidget>
 
         {/* <GoogleLineChart></GoogleLineChart> */}
       </div>

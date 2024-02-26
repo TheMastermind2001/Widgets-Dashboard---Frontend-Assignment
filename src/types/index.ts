@@ -16,7 +16,8 @@ export interface Table1Props {
     data?: Widget;
     today?: boolean;
     bgcolor?: string;
-    children?: never[]
+    children?: never[];
+    noradius?:boolean;
 }
 
 

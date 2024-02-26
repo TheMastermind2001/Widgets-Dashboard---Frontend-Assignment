@@ -7,9 +7,10 @@ type Props = {
   data?: Widget;
   bgcolor?: string;
   txtcolor?: string;
+  noradius?: boolean;
 };
 
-export default function Summary({ data, bgcolor, txtcolor }: Props) {
+export default function Summary({ data, bgcolor, txtcolor, noradius }: Props) {
   const [array, setArray] = useState<{ time: string; opened: number }[]>([]);
   let arr: {
     time: string;
@@ -23,7 +24,15 @@ export default function Summary({ data, bgcolor, txtcolor }: Props) {
     setArray(arr);
   }, [data, arr]);
   return (
-    <div className="Summary" style={{ backgroundColor: bgcolor }}>
+    <div
+      className="Summary"
+      style={{
+        borderTopLeftRadius: noradius ? "0px" : "15px",
+        borderBottomLeftRadius: noradius ? "0px" : "15px",
+        width: noradius ? "436px" : "",
+        backgroundColor: bgcolor,
+      }}
+    >
       <Days color={bgcolor || "white"}></Days>
       <div className="Summary-Contents">
         <h1 style={{ color: txtcolor }}>

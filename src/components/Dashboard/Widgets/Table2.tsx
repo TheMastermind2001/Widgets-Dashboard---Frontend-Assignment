@@ -1,11 +1,20 @@
 import React, { useEffect, useState } from "react";
-import "../../../css/Dashboard/Widgets/Table1.css";
+import "../../../css/Dashboard/Widgets/Table2.css";
 import { Widget } from "../../../types";
 import { Table1Props } from "../../../types";
 import Days from "../SubComponents/Days";
 import { toCamelCase } from "../../../utils/stringUtils";
 
-const Table1: React.FC<Table1Props> = ({ data, today, bgcolor, noradius }) => {
+const Table2: React.FC<Table1Props> = ({ data, today, bgcolor }) => {
+  const handleString = (key: string) => {
+    let str = toCamelCase(key.substring(0, 30) + (key.length > 30 ? ".." : ""));
+    for (let i = 0; i < str.length; i++) {
+      if (str[i] >= "0" && str[i] <= "9") {
+        str = str.substring(0, i);
+      }
+    }
+    return str;
+  };
   const HeadColorLeftCell: any = {
     white: "#5E5ADB",
     "#5E5ADB": "#F1F1F2",
@@ -39,9 +48,7 @@ const Table1: React.FC<Table1Props> = ({ data, today, bgcolor, noradius }) => {
       const brr: string[] = [];
       Object?.keys(score).forEach((key) => {
         if (key != "period") {
-          arr.push(
-            toCamelCase(key.substring(0, 8) + (key.length > 8 ? ".." : ""))
-          );
+          arr.push(handleString(key));
           brr.push(score[key]);
           setProduts(arr);
         }
@@ -58,28 +65,26 @@ const Table1: React.FC<Table1Props> = ({ data, today, bgcolor, noradius }) => {
   }, [data]);
 
   const style = {
-    borderRadius: noradius ? "0px" : "15px",
-    width: noradius ? "204px" : "190px",
-    backgroundColor: bgcolor,
+    backgroundColor: bgcolor, // This applies the bgcolor prop as the background color
   };
 
   return (
-    <div className="Table1" style={style}>
+    <div className="Table2" style={style}>
       <Days color={bgcolor || "white"}></Days>
 
-      <div className="Table1-Contents">
-        <div className="Table1-Row Table1-Header">
-          <div className="Table1-Cell">
+      <div className="Table2-Contents">
+        <div className="Table2-Row Table2-Header">
+          <div className="Table2-Cell">
             <h1
               style={{ color: HeadColorLeftCell[bgcolor || "white"] }}
-              className="Table1-Header-Cell-1"
+              className="Table2-Header-Cell-1"
             >
               PRODUCT
             </h1>
           </div>
           {data?.data.scores.map((item: any) => {
             return (
-              <div className="Table1-Cell">
+              <div className="Table2-Cell">
                 <h1
                   style={{
                     color: HeadColor[bgcolor || "white"],
@@ -92,15 +97,16 @@ const Table1: React.FC<Table1Props> = ({ data, today, bgcolor, noradius }) => {
             );
           })}
         </div>
+
         {products.map((product: any, index: number) => {
           return (
-            <div className="Table1-Row">
-              <div className="Table1-Cell">
+            <div className="Table2-Row">
+              <div className="Table2-Cell">
                 <h1 style={{ color: TextColor[bgcolor || "white"] }}>
                   {product}
                 </h1>
               </div>
-              <div className="Table1-Cell">
+              <div className="Table2-Cell">
                 <h1
                   style={{
                     color: TextColor[bgcolor || "white"],
@@ -110,7 +116,7 @@ const Table1: React.FC<Table1Props> = ({ data, today, bgcolor, noradius }) => {
                   {percentages[0][index]}
                 </h1>
               </div>
-              <div className="Table1-Cell">
+              <div className="Table2-Cell">
                 <h1
                   style={{
                     color: TextColor[bgcolor || "white"],
@@ -120,23 +126,53 @@ const Table1: React.FC<Table1Props> = ({ data, today, bgcolor, noradius }) => {
                   {percentages[1][index]}
                 </h1>
               </div>
+              <div className="Table2-Cell">
+                <h1
+                  style={{
+                    color: TextColor[bgcolor || "white"],
+                    textAlign: "center",
+                  }}
+                >
+                  {percentages[2][index]}
+                </h1>
+              </div>
+              <div className="Table2-Cell">
+                <h1
+                  style={{
+                    color: TextColor[bgcolor || "white"],
+                    textAlign: "center",
+                  }}
+                >
+                  {percentages[3][index]}
+                </h1>
+              </div>
+              <div className="Table2-Cell">
+                <h1
+                  style={{
+                    color: TextColor[bgcolor || "white"],
+                    textAlign: "center",
+                  }}
+                >
+                  {percentages[4][index]}
+                </h1>
+              </div>
             </div>
           );
         })}
 
-        <div className="Table1-Row Table1-Footer">
-          <div className="Table1-Cell Table1-Footer-Cell">
+        <div className="Table2-Row Table2-Footer">
+          <div className="Table2-Cell Table2-Footer-Cell">
             <h1
               style={{ color: TotalColor[bgcolor || "white"] }}
-              className="Table1-Footer-Cell-1"
+              className="Table2-Footer-Cell-1"
             >
               Total
             </h1>
           </div>
           {totals.map((item: any, index: any) => {
-            if (index >= 2) return;
+            if (index >= 5) return;
             return (
-              <div className="Table1-Cell Table1-Footer-Cell">
+              <div className="Table2-Cell Table2-Footer-Cell">
                 <h1
                   style={{
                     color: TotalColor[bgcolor || "white"],
@@ -154,4 +190,4 @@ const Table1: React.FC<Table1Props> = ({ data, today, bgcolor, noradius }) => {
   );
 };
 
-export default Table1;
+export default Table2;
