@@ -10,20 +10,26 @@ import MyChartComponent from "./SubComponents/MyChartComponent";
 import LineGraphWidget from "./Widgets/LineGraphWidget";
 import DoughnutGraphWidget from "./Widgets/DoughnutGraphWidget";
 import BarGraphWidget from "./Widgets/BarGraphWidget";
-
+import { useDispatch, useSelector } from "react-redux";
+import { setData } from "../../features/data/dataSlice";
 const Dashboard: React.FC = () => {
+  const dispatch = useDispatch();
+  let data = useSelector((state: any) => state.setData.dashboardData);
   const [dashboardData, setDashboardData] = useState<DashboardData | null>(
     null
   );
   useEffect(() => {
     const storedWidgets = localStorage.getItem("dashboardDataDefault");
+    console.log(storedWidgets);
     if (storedWidgets) {
       // Ensure you parse the stored string into JSON
       const parsedData: DashboardData = JSON.parse(storedWidgets);
       console.log(parsedData);
       setDashboardData(parsedData);
+      dispatch(setData(parsedData));
+      console.log(data);
     }
-  }, []);
+  }, [dashboardData, data, dispatch]);
 
   return (
     <div className="Dashboard">

@@ -1,7 +1,9 @@
 import React from "react";
 import image1 from "../../../images/Save-Area-Icon-1.png";
 import "../../../css/Add-Widget/SubComponents/SaveArea.css";
-type Props = {};
+type Props = {
+  
+};
 
 export default function SaveArea({}: Props) {
   return (

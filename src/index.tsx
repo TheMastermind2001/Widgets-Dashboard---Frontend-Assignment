@@ -4,6 +4,8 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import dashboardDataDefault from "./data/dashboardDataDefault";
+import { Provider } from "react-redux";
+import { store } from "./app/store";
 
 // Check if widgets data is not already set in local storage
 if (!localStorage.getItem("dashboardDataDefault")) {
@@ -18,7 +20,9 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <App />
+    <Provider store={store}>
+      <App />
+    </Provider>
   </React.StrictMode>
 );
 
