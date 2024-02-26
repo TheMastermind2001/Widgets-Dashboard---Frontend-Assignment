@@ -37,13 +37,11 @@ export default function LineGraphWidget({
         </div>
       </div>
       {xLabelPresent ? (
-        // <div className="Line-Chart-Legends-Main">
         <LineChartLegends
           chartData={chartData}
           bgcolor={bgcolor}
         ></LineChartLegends>
       ) : (
-        // </div>
         <></>
       )}
     </div>

@@ -8,6 +8,5 @@
 .Components-Area-And-Save{
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
     gap: 92px;
 }

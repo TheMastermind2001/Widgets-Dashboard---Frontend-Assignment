@@ -1,11 +1,7 @@
 .Side-Navigation-Element{
-    /* height: 48px; */
-    /* width: 48px; */
-    /* background-color: black; */
     width: 48px;
     height: 48px;
     position: relative;
-    /* padding: 8px; */
     border-radius: 6px;
     margin-left: auto;
     margin-right: auto;
@@ -13,13 +9,10 @@
 }
 
 .Side-Navigation-Element:hover{
-    /* height: 48px; */
-    /* width: 48px; */
     position: relative;
     background-color: #E9EDF5;
     width: 48px;
     height: 48px;
-    /* padding: 8px; */
     border-radius: 6px;
     margin-left: auto;
     margin-right: auto;
@@ -30,24 +23,19 @@
 .Side-Navigation-Element-Image-Div{
     height: 24px;
     width: 24px;
-    /* position: ; */
     margin-left: auto;
     margin-right: auto;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /* top: auto; */
-    /* bottom: auto; */
 }
 
 .Side-Navigation-Element-Image{
     height: 18px;
-    /* left: 2px; */
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: #667085;
-    /* border: 2px solid #667085 */
 }

@@ -56,10 +56,6 @@
 
 }
 
-.Table2-Footer{
-    /* Just for the vertical lines*/
-    /* padding-bottom: 20px; */
-}
 
 .Table2-Footer>div>h1{
     color: black;
@@ -72,12 +68,12 @@
     content: "";
     position: absolute;
     right: 0px;
-    top: -16.7px; /* Adjust this value to position the line right below the headers */
+    top: -16.7px;
     bottom:0px;
     width: 0.2px;
-    /* background-color:  #f2efef; */
+    
     background-color: rgba(246,246,246,0.1);
-    ; /* Match this to your table's line color */
+    
 }
 
 .Table2-Footer-Cell{
@@ -90,12 +86,11 @@
     right: 0px;
     bottom:0px;
     width: 0.2  px;
-    /* background-color:  #f2efef; */
     background-color: rgba(246,246,246,0.1);
-    /* Match this to your table's line color */
+    
 }
 
-/* Adjust the top value of the first row cells to align with the bottom of your headers */
+
 .Table2-Header + .Table2-Row .Table2-Cell:not(:last-child)::after {
     top: 0;
 }

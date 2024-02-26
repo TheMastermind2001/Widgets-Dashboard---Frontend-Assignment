@@ -3,24 +3,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* width: 327px; */
-    /* height: 20px; */
-    /* top: 22px; */
-    /* left: 16px; */
-    /* padding: 0px, 15px, 0px, 0px; */
-    /* gap: 47px; */
     gap: 20px;
     left: 21.6px;
+    height: 20px;
+    top: 22px;
 
-
-
-
-    /* width: 327px; */
-height: 20px;
-top: 22px;
-/* left: 16px; */
-/* padding: 0px, 15px, 0px, 0px; */
-/* gap: 47px */
 
 }
 
@@ -29,7 +16,6 @@ top: 22px;
     position: relative;
     width: 20.8px;
     height: 20.8px;
-    /* top: 21.6px; */
     padding: 1.73px 2.6px 1.73px 2.6px;
     border-radius: 5px;
 
@@ -39,8 +25,6 @@ top: 22px;
     position: relative;
     width: 20.8px;
     height: 20.8px;
-    /* top: 21.6px; */
-    /* left: 21.6px; */
     padding: 1.73px 2.6px 1.73px 2.6px;
     background-color: #E9EDF5;
 }

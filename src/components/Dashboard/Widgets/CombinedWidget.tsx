@@ -11,10 +11,6 @@ type Props = {
 };
 
 export default function CombinedWidget({ dashboardData }: Props) {
-  //   const dashboardData: any = dashboardDataDefault;
-  //   const dashboardData= useSelector(
-  // (state: any) => state.setData.dashboardData
-  //   );
   return (
     <div className="Combined-Widget">
       <BarGraphWidget

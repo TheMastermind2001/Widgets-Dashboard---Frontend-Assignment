@@ -27,12 +27,11 @@ export default function LineChartLegends({ chartData, bgcolor }: Props) {
   };
   return (
     <div className="Line-Chart-Legends">
-      <hr 
+      <hr
         className="Line-Chart-HR"
         style={{
           backgroundColor: HRColorLineLegends[bgcolor],
           border: "1px solid " + HRColorLineLegends[bgcolor],
-          
         }}
       ></hr>
       {chartData?.data.map((item: any) => {

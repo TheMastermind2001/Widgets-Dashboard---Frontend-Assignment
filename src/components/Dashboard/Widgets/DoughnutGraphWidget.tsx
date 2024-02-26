@@ -10,32 +10,21 @@ type Props = {
 };
 
 export default function DoughnutGraphWidget({ data, bgcolor }: Props) {
-  // const TextColorDoughnut: any = {
-  //   white: "#AFAFAF",
-  //   "#5E5ADB": "rgba(255,255,255,0.65)",
-  //   "#282828": "#7E7E7E",
-  // };
   useEffect(() => {
     console.log(data);
   }, [data]);
   const datanew = {
-    // labels: ["Red", "Green", "Yellow", "Blue"],
     datasets: [
       {
         label: "Orders",
         data: data?.data.orders.map((item: any) => {
           return item.value;
         }),
-        // Example data
+       
         backgroundColor: data?.data.orders.map((item: any) => {
           return item.color;
         }),
-        // borderColor: [
-        //   "rgba(255,99,132,1)",
-        //   "rgba(75, 192, 192, 1)",
-        //   "rgba(255, 206, 86, 1)",
-        //   "rgba(54, 162, 235, 1)",
-        // ],
+        
         borderWidth: 2,
         borderColor: bgcolor,
       },

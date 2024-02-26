@@ -53,18 +53,10 @@
 }
 
 .Horizontal-Line{
-    border: none; /* Remove the default border */
-  /* height: 1px; Set the height of the line */
-  /* background-color: #E1E1E1; 
-  Set the line color */
-  margin: 0;
-  /* border: 1px solid #E1E1E1; */
+    border: none;
+     margin: 0;
 
 }
-
-/* .Is-Selected{
-    color: ;
-} */
 
 .Color-Is-White{
     color: white;

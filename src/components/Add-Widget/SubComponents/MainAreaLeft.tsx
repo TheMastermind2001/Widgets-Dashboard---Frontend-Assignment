@@ -66,9 +66,8 @@ export default function MainAreaLeft({}: Props) {
             width={"190px"}
           ></LineGraphWidget>
         );
-      // Add more cases for other options if needed
       default:
-        return null; // Render nothing for unknown options
+        return null;
     }
   };
   return (
@@ -80,7 +79,6 @@ export default function MainAreaLeft({}: Props) {
         <div className="item item4">{renderComponent()}</div>
         <div className="item item5"></div>
         <div className="item item6"></div>
-        {/* <div className="item item7"></div> */}
       </div>
       <div className="Add-Widget-Main-Area-Left-Color-Selectors">
         <div
@@ -99,10 +97,6 @@ export default function MainAreaLeft({}: Props) {
             src={image1}
             alt=""
           />
-          {/* <img
-            className="Add-Widget-Main-Area-Left-Color-Selected"
-            // src={imageselected}
-          ></img> */}
         </div>
         <div
           className={

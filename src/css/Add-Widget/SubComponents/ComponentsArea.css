@@ -10,10 +10,8 @@
 height:78px;
 top: 167px;
 left: 699px;
-/* padding: 16px; */
 border-radius: 8px;
 border: 1.5px;
-/* border: 1.5px solid #5E5ADB; */
 border: 2px solid #E4E4E7;
 cursor: pointer;
 
@@ -74,10 +72,8 @@ margin:0;
     height:104px;
     top: 167px;
     left: 699px;
-    /* padding: 16px; */
     border-radius: 8px;
     border: 1.5px;
-    /* border: 1.5px solid #5E5ADB; */
     border: 2px solid #E4E4E7;
     cursor: pointer;
 
@@ -128,17 +124,15 @@ margin:0;
 }
 
 .Add-Widget-Components-Area-Graph-Icons{
-    /* position: relative; */
-    /* top:0px; */
     margin-top: 8px;
     width: 141px;
-height: 25px;
-top: 65px;
-left: 16px;
-/* padding: 2.82px; */
-border-radius: 5.64px;
-background-color: #F4F4F5;
-display: flex;
+    height: 25px;
+    top: 65px;
+    left: 16px;
+
+    border-radius: 5.64px;
+    background-color: #F4F4F5;
+    display: flex;
 
     
 }
@@ -148,23 +142,16 @@ display: flex;
     margin-top: auto;
     margin-bottom: auto;
     width: 45.12px;
-height: 19.74px;
-/* padding: 4.23px, 8.46px, 4.23px, 8.46px */
-border-radius: 4.23px;
-text-align: center;
-/* gap: 7.05px */
+    height: 19.74px;
+    border-radius: 4.23px;
+    text-align: center;
 
 }
 
 
 .Add-Widget-Components-Area-Graph-Icons-Image:hover{
     background-color: #FFFFFF;
-
     box-shadow: 0px 0.7049999833106995px 2.115000009536743px 0px #0000001A;
-
-    /* box-shadow: 0px 0.7049999833106995px 1.409999966621399px -0.7049999833106995px #0000001A; */
-
-
 }
 
 .Add-Widget-Components-Area-Graph-Icons>img{
@@ -182,10 +169,8 @@ text-align: center;
 height:78px;
 top: 167px;
 left: 699px;
-/* padding: 16px; */
 border-radius: 8px;
 border: 1.5px;
-/* border: 1.5px solid #5E5ADB; */
 border: 2px solid #E4E4E7;
 cursor: pointer;
 

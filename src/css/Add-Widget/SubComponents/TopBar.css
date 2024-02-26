@@ -67,9 +67,7 @@
     width: 376px;
     height: 36px;
     gap: 6px;
-    /* padding: 8px 56px 8px 12px; */
     border-radius: 6px;
-    /* border: 1px; */
     border: 1px solid #CBD5E1;
     font-family: "Inter";
     font-size: 14px;
@@ -78,19 +76,14 @@
     letter-spacing: 0em;
     text-align: left;
     color: rgba(137,137, 137,1);
-    /* transition: border-color 0.3s ease; */
+ 
 }
 
-/* .Add-Widget-Top-Bar-Input>input:focus{
-    border-color: #5E5ADB;
-} */
+
 
 .Add-Widget-Top-Bar-Right{
     display:flex;
     flex-direction: column;
-    /* border-color: #5E5ADB; */
-    /* border:none; */
-    /* border: 3px solid red; */
 }
 
 
@@ -98,11 +91,6 @@
     position: relative;
     right:-365px;
     bottom: 10px
-    /* display:flex; */
-    /* flex-direction: column; */
-    /* border-color: #5E5ADB; */
-    /* border:none; */
-    /* border: 3px solid red; */
 }
 
 

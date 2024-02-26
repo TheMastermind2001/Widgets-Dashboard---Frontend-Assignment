@@ -38,7 +38,7 @@ const LineChart: React.FC<LineWidgetProps> = ({
         backgroundColor: campaign.color,
         fill: false,
         borderWidth: 3,
-        pointRadius: 0, // Remove the dots at data points
+        pointRadius: 0,
         tension: 0.03,
       })) || [],
   };
@@ -50,24 +50,19 @@ const LineChart: React.FC<LineWidgetProps> = ({
 
         grid: {
           display: true,
-          // display: xLabelPresent ? true : false,
-          drawBorder: true, // Ensures the border is drawn
-          // borderColor: "red", // Sets the y-axis line color to red
-          // color: "transparent", // Makes horizontal gridlines transparent
+          drawBorder: true,
           drawTicks: false,
           color: GridColor[bgcolor],
         },
         ticks: {
           display: xLabelPresent ? true : false,
           font: {
-            size: 11, // Example font size, adjust as needed
-            family: "Inter", // Set your desired font family here
+            size: 11,
+            family: "Inter",
             weight: 500,
-            // color: "red", // Set your desired font color here
           },
-          maxRotation: 90, // Rotate labels to 90 degrees
+          maxRotation: 90,
           minRotation: 90,
-          // color: "rgba(71,71,71,0.4)",
           color: TextColor[bgcolor],
         },
       },
@@ -76,67 +71,28 @@ const LineChart: React.FC<LineWidgetProps> = ({
         grid: {
           display: true,
           color: bgcolor,
-          // drawBorder: false,
-          // borderColor: "black",
-          // color: "blue",
         },
         ticks: {
           stepSize: 10,
           callback: function (tickValue: string | number) {
-            // Accept both string and number types
-            const value = Number(tickValue); // Ensure 'value' is treated as a number
-            // Assuming the value is in thousands for visual representation
+            const value = Number(tickValue);
             return `${value}k`;
           },
 
           font: {
-            size: 11, // Example font size, adjust as needed
-            family: "Inter", // Set your desired font family here
+            size: 11,
+            family: "Inter",
             weight: 500,
-            // Set your desired font color here
           },
           color: TextColor[bgcolor],
         },
         suggestedMax: xLabelPresent ? 40 : 37,
       },
     },
-    // scales: {
-    //   x: {
-    //     display: false, // Keep the axis "active"
-    //     color: "transparent",
-    //     grid: {
-    //       display: true, // Show vertical grid lines
-    //       drawBorder: false, // Necessary to draw the border so we can color it
-    //       borderColor: "black", // Set the color of the border (axis line)
-    //       // color: "rgba(70,70,70,0.1)",
-    //       color: "white",
-    //     },
-    //     ticks: {
-    //       display: false,
-    //       color: "red", // Hide tick labels on the x-axis
-    //     },
-    //   },
 
-    //   y: {
-    //     display: true,
-    //     ticks:{
-    //       display: false,
-    //       color: "red",
-    //       // Hide tick labels on the x-axis
-    //     },
-    //     gridlines: {
-    //       // zeroLineColor: "#white",
-    //       // Make sure grid lines are displayed
-    //       display: false,
-    //       // Set the color of the grid lines
-    //       color: "red",
-    //     },
-    //     suggestedMax: 40,
-    //   },
-    // },
     plugins: {
       legend: {
-        display: false, // Hide the legend
+        display: false,
       },
     },
     maintainAspectRatio: false,

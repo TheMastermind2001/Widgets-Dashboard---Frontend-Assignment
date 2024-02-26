@@ -15,7 +15,6 @@ export default function ComponentsArea({ setOption }: Props) {
   const handleClick = (s: string) => {
     setOption(s);
     dispatch(click(s));
-    // dispatch(setBackground("white"));
   };
   return (
     <div className="Add-Widget-Components-Area">
@@ -36,7 +35,6 @@ export default function ComponentsArea({ setOption }: Props) {
 
       <div
         onClick={() => {
-          // handleClick("Graph Doughnut");
         }}
         className="Add-Widget-Components-Area-Graph"
       >
@@ -46,7 +44,6 @@ export default function ComponentsArea({ setOption }: Props) {
             Random Description
           </h1>
           <div className="Add-Widget-Components-Area-Graph-Icons">
-            {/* <div className="Add-Widget-Components-Area-Graph-Icons-Images"> */}
             <div
               onClick={() => {
                 handleClick("Graph Bar");
@@ -71,14 +68,12 @@ export default function ComponentsArea({ setOption }: Props) {
             >
               <img src={image3} alt="" />
             </div>
-            {/* </div> */}
           </div>
         </div>
       </div>
 
       <div
         onClick={() => {
-          // handleClick("Summary");
         }}
         className="Add-Widget-Components-Area-Summary"
       >

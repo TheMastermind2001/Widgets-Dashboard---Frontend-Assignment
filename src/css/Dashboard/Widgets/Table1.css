@@ -3,8 +3,6 @@
     height: 190px;
     border-radius: 15px;
     border: 1px;
-    /* background-color: ; */
-
     border: 1px solid #E6E6E6;
     box-shadow: 0px 0px 6px 0px #0000001A;
     
@@ -19,7 +17,6 @@
 }
 
 .Table1-Row{
-    /* background-color: antiquewhite; */
     display: grid;
     grid-template-columns: 1.6fr 1fr 1fr;
 
@@ -27,7 +24,6 @@
 
 .Table1-Cell{
     position:relative;
-    /* position: relative; */
     height: 20px;
 }
 
@@ -56,11 +52,6 @@
 
 }
 
-.Table1-Footer{
-    /* Just for the vertical lines*/
-    /* padding-bottom: 20px; */
-}
-
 .Table1-Footer>div>h1{
     color: black;
     font-weight: 600;
@@ -72,12 +63,10 @@
     content: "";
     position: absolute;
     right: 0px;
-    top: -16.7px; /* Adjust this value to position the line right below the headers */
+    top: -16.7px; 
     bottom:0px;
     width: 0.2px;
-    /* background-color:  #f2efef; */
     background-color: rgba(246,246,246,0.07);
-    ; /* Match this to your table's line color */
     color: rgba(246,246,246,0.07);
     border-color:  rgba(246,246,246,0.07);
 }
@@ -92,21 +81,18 @@
     right: 0px;
     bottom:0px;
     width: 0.2  px;
-    /* background-color:  #f2efef; */
     background-color: rgba(246,246,246,0.07);
     color:rgba(246,246,246,0.07);
     border-color:  rgba(246,246,246,0.07);
-    /* Match this to your table's line color */
+   
 }
 
-/* Adjust the top value of the first row cells to align with the bottom of your headers */
+
 .Table1-Header + .Table1-Row .Table1-Cell:not(:last-child)::after {
     top: 0;
     background-color: rgba(246,246,246,0.07);
     color:rgba(246,246,246,0.07);
     border-color:  rgba(246,246,246,0.07);
-    /* color:rgba(246,246,246,0.7); */
-    /* background-color: rgba(246,246,246,0.7); */
 }
 
 
