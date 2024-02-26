@@ -1,0 +1,13 @@
+.Add-Widget-Main-Area{
+    position: relative;
+    display:flex;
+    justify-content: space-evenly;
+    top: 20px;
+}
+
+.Components-Area-And-Save{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    gap: 92px;
+}

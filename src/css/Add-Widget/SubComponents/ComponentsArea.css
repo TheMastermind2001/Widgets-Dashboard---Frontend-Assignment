@@ -1,6 +1,7 @@
 .Add-Widget-Components-Area{
     display: flex;
     flex-direction: column;
+    gap:10px;
 }
 
 
@@ -157,7 +158,11 @@ text-align: center;
 
 
 .Add-Widget-Components-Area-Graph-Icons-Image:hover{
-    background-color: #F4F4F5;
+    background-color: #FFFFFF;
+
+    box-shadow: 0px 0.7049999833106995px 2.115000009536743px 0px #0000001A;
+
+    /* box-shadow: 0px 0.7049999833106995px 1.409999966621399px -0.7049999833106995px #0000001A; */
 
 
 }
@@ -167,4 +172,78 @@ text-align: center;
     margin-bottom: auto;
     height: 11.67px;
     width: 11.67px;
+}
+
+
+/*---------------------------------------------------------Summary------------------------------------------------------------------*/
+
+.Add-Widget-Components-Area-Summary{
+    width: 325px;
+height:78px;
+top: 167px;
+left: 699px;
+/* padding: 16px; */
+border-radius: 8px;
+border: 1.5px;
+/* border: 1.5px solid #5E5ADB; */
+border: 2px solid #E4E4E7;
+cursor: pointer;
+
+}
+
+
+.Add-Widget-Components-Area-Summary:hover{
+    border: 2px solid #5E5ADB;
+    box-shadow: 0px 2px 4px 0px #00000040;
+}
+
+.Add-Widget-Components-Area-Summary-Text{
+    position: relative;
+    padding: 2px;
+    width: 293px;
+    height: 46px;
+    top:15px;
+    left: 15px;
+    gap: 2px;
+
+}
+
+.Add-Widget-Components-Area-Summary-Text-1{
+    font-family: "Inter";
+font-size: 16px;
+font-weight: 500;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: left;
+color: #585858;
+margin:0;
+
+
+}
+
+
+.Add-Widget-Components-Area-Summary-Text-2{
+    margin:0;
+    font-family: "Inter";
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:#888891;
+    
+
+}
+
+
+.Add-Widget-Components-Area-Heading{
+    margin: 0;
+    font-family: "Inter";
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color:#2B2B2B59;
+
 }

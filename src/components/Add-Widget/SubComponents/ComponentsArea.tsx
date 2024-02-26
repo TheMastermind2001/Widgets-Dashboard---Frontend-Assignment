@@ -8,6 +8,7 @@ type Props = {};
 export default function ComponentsArea({}: Props) {
   return (
     <div className="Add-Widget-Components-Area">
+      <h1 className="Add-Widget-Components-Area-Heading">COMPONENTS</h1>
       <div className="Add-Widget-Components-Area-Data">
         <div className="Add-Widget-Components-Area-Data-Text">
           <h1 className="Add-Widget-Components-Area-Data-Text-1">Data</h1>
@@ -36,6 +37,15 @@ export default function ComponentsArea({}: Props) {
             </div>
             {/* </div> */}
           </div>
+        </div>
+      </div>
+
+      <div className="Add-Widget-Components-Area-Summary">
+        <div className="Add-Widget-Components-Area-Summary-Text">
+          <h1 className="Add-Widget-Components-Area-Summary-Text-1">Summary</h1>
+          <h1 className="Add-Widget-Components-Area-Summary-Text-2">
+            Random Description
+          </h1>
         </div>
       </div>
     </div>
